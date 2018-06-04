@@ -1,6 +1,6 @@
 title: Picnic Machine Learning
 logo: /assets/img/logo.png
 description: Immutable machine learning in Scala.
-show_downloads: true
+show_downloads: false
 google_analytics:
 theme: jekyll-theme-minimal
