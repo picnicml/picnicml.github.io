@@ -2,122 +2,77 @@
 layout: default
 ---
 
-Text can be **bold**, _italic_, or ~~strikethrough~~.
+# doddle-model
+[doddle-model](https://github.com/picnicml/doddle-model) is an in-memory machine learning library that can be summed up with three main characteristics:
+* it is built on top of [Breeze](https://github.com/scalanlp/breeze)
+* it provides [immutable objects](https://en.wikipedia.org/wiki/Immutable_object) that are a _doddle_ to use in parallel code
+* it exposes its functionality through a [scikit-learn](https://github.com/scikit-learn/scikit-learn)-like API
 
-[Link to another page](./another-page.html).
+**Caveat emptor!** [doddle-model](https://github.com/picnicml/doddle-model) is in an early-stage development phase. Any kind of contributions are much appreciated.
 
-There should be whitespace between paragraphs.
+You can chat with us [on gitter](https://gitter.im/picnicml/doddle-model).
 
-There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
-
-# Header 1
-
-This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
-
-## Header 2
-
-> This is a blockquote following a header.
->
-> When something is important enough, you do it even if the odds are not in your favor.
-
-### Header 3
-
-```js
-// Javascript code with syntax highlighting.
-var fun = function lang(l) {
-  dateformat.i18n = require('./lang/' + l)
-  return true;
-}
+## Installation
+Publish the project to a local Ivy repository:
+```bash
+git clone https://github.com/picnicml/doddle-model.git
+cd doddle-model
+sbt publish-local
 ```
 
-```ruby
-# Ruby code with syntax highlighting
-GitHubPages::Dependencies.gems.each do |gem, version|
-  s.add_dependency(gem, "= #{version}")
-end
+Add the dependency to your SBT project definition:
+```scala
+libraryDependencies += "com.picnicml" %% "doddle-model" % "0.0.0-SNAPSHOT"
 ```
 
-#### Header 4
+## Getting Started
+This is a complete list of code examples, for an example of how to serve a trained [doddle-model](https://github.com/picnicml/doddle-model) in a pipeline implemented with Apache Beam see [doddle-beam-example](https://github.com/picnicml/doddle-beam-example).
 
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
+#### 1. Feature Preprocessing
+* [Standard Scaler](https://github.com/picnicml/doddle-model-examples/blob/master/src/main/scala/com/picnicml/doddlemodel/examples/preprocessing/StandardScalerExample.scala)
 
-##### Header 5
+#### 2. Baseline models
+* [Most Frequent Classifier](https://github.com/picnicml/doddle-model-examples/blob/master/src/main/scala/com/picnicml/doddlemodel/examples/dummy/MostFrequentClassifierExample.scala)
+* [Stratified Classifier](https://github.com/picnicml/doddle-model-examples/blob/master/src/main/scala/com/picnicml/doddlemodel/examples/dummy/StratifiedClassifierExample.scala)
+* [Uniform Classifier](https://github.com/picnicml/doddle-model-examples/blob/master/src/main/scala/com/picnicml/doddlemodel/examples/dummy/UniformClassifierExample.scala)
+* [Mean Regressor](https://github.com/picnicml/doddle-model-examples/blob/master/src/main/scala/com/picnicml/doddlemodel/examples/dummy/MeanRegressorExample.scala)
+* [Median Regressor](https://github.com/picnicml/doddle-model-examples/blob/master/src/main/scala/com/picnicml/doddlemodel/examples/dummy/MedianRegressorExample.scala)
 
-1.  This is an ordered list following a header.
-2.  This is an ordered list following a header.
-3.  This is an ordered list following a header.
+#### 3. Linear models
+* [Linear Regression](https://github.com/picnicml/doddle-model-examples/blob/master/src/main/scala/com/picnicml/doddlemodel/examples/linear/LinearRegressionExample.scala)
+* [Logistic Regression](https://github.com/picnicml/doddle-model-examples/blob/master/src/main/scala/com/picnicml/doddlemodel/examples/linear/LogisticRegressionExample.scala)
+* [Softmax Classifier](https://github.com/picnicml/doddle-model-examples/blob/master/src/main/scala/com/picnicml/doddlemodel/examples/linear/SoftmaxClassifierExample.scala)
+* [Poisson Regression](https://github.com/picnicml/doddle-model-examples/blob/master/src/main/scala/com/picnicml/doddlemodel/examples/linear/PoissonRegressionExample.scala)
 
-###### Header 6
+#### 4. Model Selection
+* [Cross-Validation](https://github.com/picnicml/doddle-model-examples/blob/master/src/main/scala/com/picnicml/doddlemodel/examples/modelselection/CrossValidationExample.scala)
+* [Grid Search](https://github.com/picnicml/doddle-model-examples/blob/master/src/main/scala/com/picnicml/doddlemodel/examples/modelselection/GridSearchExample.scala)
+* [Random Search](https://github.com/picnicml/doddle-model-examples/blob/master/src/main/scala/com/picnicml/doddlemodel/examples/modelselection/RandomSearchExample.scala)
 
-| head1        | head two          | three |
-|:-------------|:------------------|:------|
-| ok           | good swedish fish | nice  |
-| out of stock | good and plenty   | nice  |
-| ok           | good `oreos`      | hmm   |
-| ok           | good `zoute` drop | yumm  |
+#### 5. Miscellaneous
+* [Reading Data](https://github.com/picnicml/doddle-model-examples/blob/master/src/main/scala/com/picnicml/doddlemodel/examples/misc/ReadingDataExample.scala)
+* [Estimator Persistence](https://github.com/picnicml/doddle-model-examples/blob/master/src/main/scala/com/picnicml/doddlemodel/examples/misc/EstimatorPersistenceExample.scala)
 
-### There's a horizontal rule below this.
+## Performance
+[doddle-model](https://github.com/picnicml/doddle-model) is developed with performance in mind, for benchmarks see the [doddle-benchmark](https://github.com/picnicml/doddle-benchmark) repository.
 
-* * *
-
-### Here is an unordered list:
-
-*   Item foo
-*   Item bar
-*   Item baz
-*   Item zip
-
-### And an ordered list:
-
-1.  Item one
-1.  Item two
-1.  Item three
-1.  Item four
-
-### And a nested list:
-
-- level 1 item
-  - level 2 item
-  - level 2 item
-    - level 3 item
-    - level 3 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-
-### Small image
-
-![Octocat](https://assets-cdn.github.com/images/icons/emoji/octocat.png)
-
-### Large image
-
-![Branching](https://guides.github.com/activities/hello-world/branching.png)
-
-
-### Definition lists can be used with HTML syntax.
-
-<dl>
-<dt>Name</dt>
-<dd>Godzilla</dd>
-<dt>Born</dt>
-<dd>1952</dd>
-<dt>Birthplace</dt>
-<dd>Japan</dd>
-<dt>Color</dt>
-<dd>Green</dd>
-</dl>
-
+#### Native Linear Algebra Libraries
+[Breeze](https://github.com/scalanlp/breeze) utilizes [netlib-java](https://github.com/fommil/netlib-java) for accessing hardware optimised linear algebra libraries. TL;DR seeing something like
 ```
-Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
+INFO: successfully loaded /var/folders/9h/w52f2svd3jb750h890q1x4j80000gn/T/jniloader3358656786070405996netlib-native_system-osx-x86_64.jnilib
 ```
+means that BLAS/LAPACK/ARPACK implementations are used. For more information see the [Breeze](https://github.com/scalanlp/breeze) documentation.
 
-```
-The final element.
-```
+#### Memory
+If you encounter `java.lang.OutOfMemoryError: Java heap space` increase the maximum heap size with `-Xms` and `-Xmx` JVM properties. E.g. use `-Xms8192m -Xmx8192m` for initial and maximum heap space of 8Gb. Note that the maximum heap limit for the 32-bit JVM is 4Gb (at least in theory) so make sure to use 64-bit JVM if more memory is needed. If the error still occurs and you are using hyperparameter search or cross validation, see the next section.
+
+#### Parallelism
+To limit the number of threads running at one time (and thus memory consumption) when doing cross validation and hyperparameter search, a `FixedThreadPool` executor is used. By default maximum number of threads is set to the number of system's cores. Set the `-DmaxNumThreads` JVM property to change that, e.g. to allow for 16 threads use `-DmaxNumThreads=16`.
+
+## Development
+Run the tests with `sbt test`. Concerning the code style, [PayPal Scala Style](https://github.com/paypal/scala-style-guide) and [Databricks Scala Guide](https://github.com/databricks/scala-style-guide) are roughly followed. Note that a maximum line length of 120 characters is used.
+
+## Resources
+* [1] [Pattern Recognition and Machine Learning, Christopher Bishop](http://www.springer.com/gp/book/9780387310732)
+* [2] [API design for machine learning software: experiences from the scikit-learn project, L. Buitinck et al.](https://arxiv.org/abs/1309.0238)
+* [3] [UCI Machine Learning Repository. Irvine, CA: University of California, School of Information and Computer Science, Dua, D. and Karra Taniskidou, E.](http://archive.ics.uci.edu/ml)
