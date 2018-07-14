@@ -31,25 +31,31 @@ This is a complete list of code examples, for an example of how to serve a train
 #### 1. Feature Preprocessing
 * [Standard Scaler](https://github.com/picnicml/doddle-model-examples/blob/master/src/main/scala/com/picnicml/doddlemodel/examples/preprocessing/StandardScalerExample.scala)
 
-#### 2. Baseline models
+#### 2. Metrics
+* [Classification Metrics](https://github.com/picnicml/doddle-model/blob/master/src/main/scala/com/picnicml/doddlemodel/metrics/ClassificationMetrics.scala)
+* [Regression Metrics](https://github.com/picnicml/doddle-model/blob/master/src/main/scala/com/picnicml/doddlemodel/metrics/RegressionMetrics.scala)
+* [Ranking Metrics](https://github.com/picnicml/doddle-model/blob/master/src/main/scala/com/picnicml/doddlemodel/metrics/RankingMetrics.scala)
+* [ROC curve visualization](https://picnicml.github.io/doddle-model-examples/roc-curve-visualization.html)
+
+#### 3. Baseline models
 * [Most Frequent Classifier](https://github.com/picnicml/doddle-model-examples/blob/master/src/main/scala/com/picnicml/doddlemodel/examples/dummy/MostFrequentClassifierExample.scala)
 * [Stratified Classifier](https://github.com/picnicml/doddle-model-examples/blob/master/src/main/scala/com/picnicml/doddlemodel/examples/dummy/StratifiedClassifierExample.scala)
 * [Uniform Classifier](https://github.com/picnicml/doddle-model-examples/blob/master/src/main/scala/com/picnicml/doddlemodel/examples/dummy/UniformClassifierExample.scala)
 * [Mean Regressor](https://github.com/picnicml/doddle-model-examples/blob/master/src/main/scala/com/picnicml/doddlemodel/examples/dummy/MeanRegressorExample.scala)
 * [Median Regressor](https://github.com/picnicml/doddle-model-examples/blob/master/src/main/scala/com/picnicml/doddlemodel/examples/dummy/MedianRegressorExample.scala)
 
-#### 3. Linear models
+#### 4. Linear models
 * [Linear Regression](https://github.com/picnicml/doddle-model-examples/blob/master/src/main/scala/com/picnicml/doddlemodel/examples/linear/LinearRegressionExample.scala)
 * [Logistic Regression](https://github.com/picnicml/doddle-model-examples/blob/master/src/main/scala/com/picnicml/doddlemodel/examples/linear/LogisticRegressionExample.scala)
 * [Softmax Classifier](https://github.com/picnicml/doddle-model-examples/blob/master/src/main/scala/com/picnicml/doddlemodel/examples/linear/SoftmaxClassifierExample.scala)
 * [Poisson Regression](https://github.com/picnicml/doddle-model-examples/blob/master/src/main/scala/com/picnicml/doddlemodel/examples/linear/PoissonRegressionExample.scala)
 
-#### 4. Model Selection
+#### 5. Model Selection
 * [Cross-Validation](https://github.com/picnicml/doddle-model-examples/blob/master/src/main/scala/com/picnicml/doddlemodel/examples/modelselection/CrossValidationExample.scala)
 * [Grid Search](https://github.com/picnicml/doddle-model-examples/blob/master/src/main/scala/com/picnicml/doddlemodel/examples/modelselection/GridSearchExample.scala)
 * [Random Search](https://github.com/picnicml/doddle-model-examples/blob/master/src/main/scala/com/picnicml/doddlemodel/examples/modelselection/RandomSearchExample.scala)
 
-#### 5. Miscellaneous
+#### 6. Miscellaneous
 * [Reading Data](https://github.com/picnicml/doddle-model-examples/blob/master/src/main/scala/com/picnicml/doddlemodel/examples/misc/ReadingDataExample.scala)
 * [Shuffling Data](https://github.com/picnicml/doddle-model-examples/blob/master/src/main/scala/com/picnicml/doddlemodel/examples/misc/ShuffleDatasetExample.scala)
 * [Splitting Data](https://github.com/picnicml/doddle-model-examples/blob/master/src/main/scala/com/picnicml/doddlemodel/examples/misc/SplitDatasetExample.scala)
