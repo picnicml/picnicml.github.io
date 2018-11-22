@@ -51,7 +51,8 @@ This is a complete list of code examples, for an example of how to serve a train
 * [Poisson Regression](https://github.com/picnicml/doddle-model-examples/blob/master/src/main/scala/com/picnicml/doddlemodel/examples/linear/PoissonRegressionExample.scala)
 
 #### 5. Model Selection
-* [Cross-Validation](https://github.com/picnicml/doddle-model-examples/blob/master/src/main/scala/com/picnicml/doddlemodel/examples/modelselection/CrossValidationExample.scala)
+* [K-Fold Cross-Validation](https://github.com/picnicml/doddle-model-examples/blob/master/src/main/scala/com/picnicml/doddlemodel/examples/modelselection/KFoldExample.scala)
+* [Group K-Fold Cross-Validation](https://github.com/picnicml/doddle-model-examples/blob/master/src/main/scala/com/picnicml/doddlemodel/examples/modelselection/GroupKFoldExample.scala)
 * [Grid Search](https://github.com/picnicml/doddle-model-examples/blob/master/src/main/scala/com/picnicml/doddlemodel/examples/modelselection/GridSearchExample.scala)
 * [Random Search](https://github.com/picnicml/doddle-model-examples/blob/master/src/main/scala/com/picnicml/doddlemodel/examples/modelselection/RandomSearchExample.scala)
 
