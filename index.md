@@ -13,56 +13,49 @@ layout: default
 You can chat with us [on gitter](https://gitter.im/picnicml/doddle-model).
 
 ## Installation
-Publish the project to a local Ivy repository:
-```bash
-git clone https://github.com/picnicml/doddle-model.git
-cd doddle-model
-sbt publish-local
-```
-
 Add the dependency to your SBT project definition:
 ```scala
-libraryDependencies += "com.picnicml" %% "doddle-model" % "0.0.0-SNAPSHOT"
+libraryDependencies += "io.github.picnicml" %% "doddle-model" % "0.0.1-alpha1"
 ```
 
 ## Getting Started
 This is a complete list of code examples, for an example of how to serve a trained [doddle-model](https://github.com/picnicml/doddle-model) in a pipeline implemented with Apache Beam see [doddle-beam-example](https://github.com/picnicml/doddle-beam-example).
 
 #### 1. Feature Preprocessing
-* [Standard Scaler](https://github.com/picnicml/doddle-model-examples/blob/master/src/main/scala/com/picnicml/doddlemodel/examples/preprocessing/StandardScalerExample.scala)
-* [Mean Value Imputation](https://github.com/picnicml/doddle-model-examples/blob/master/src/main/scala/com/picnicml/doddlemodel/examples/impute/MeanValueImputerExample.scala)
+* [Standard Scaler](https://github.com/picnicml/doddle-model-examples/blob/master/src/main/scala/io/picnicml/doddlemodel/examples/preprocessing/StandardScalerExample.scala)
+* [Mean Value Imputation](https://github.com/picnicml/doddle-model-examples/blob/master/src/main/scala/io/picnicml/doddlemodel/examples/impute/MeanValueImputerExample.scala)
 
 #### 2. Metrics
-* [Classification Metrics](https://github.com/picnicml/doddle-model/blob/master/src/main/scala/com/picnicml/doddlemodel/metrics/ClassificationMetrics.scala)
-* [Regression Metrics](https://github.com/picnicml/doddle-model/blob/master/src/main/scala/com/picnicml/doddlemodel/metrics/RegressionMetrics.scala)
-* [Ranking Metrics](https://github.com/picnicml/doddle-model/blob/master/src/main/scala/com/picnicml/doddlemodel/metrics/RankingMetrics.scala)
+* [Classification Metrics](https://github.com/picnicml/doddle-model/blob/master/src/main/scala/io/picnicml/doddlemodel/metrics/ClassificationMetrics.scala)
+* [Regression Metrics](https://github.com/picnicml/doddle-model/blob/master/src/main/scala/io/picnicml/doddlemodel/metrics/RegressionMetrics.scala)
+* [Ranking Metrics](https://github.com/picnicml/doddle-model/blob/master/src/main/scala/io/picnicml/doddlemodel/metrics/RankingMetrics.scala)
 * [ROC curve visualization](https://picnicml.github.io/doddle-model-examples/roc-curve-visualization.html)
 
 #### 3. Baseline models
-* [Most Frequent Classifier](https://github.com/picnicml/doddle-model-examples/blob/master/src/main/scala/com/picnicml/doddlemodel/examples/dummy/MostFrequentClassifierExample.scala)
-* [Stratified Classifier](https://github.com/picnicml/doddle-model-examples/blob/master/src/main/scala/com/picnicml/doddlemodel/examples/dummy/StratifiedClassifierExample.scala)
-* [Uniform Classifier](https://github.com/picnicml/doddle-model-examples/blob/master/src/main/scala/com/picnicml/doddlemodel/examples/dummy/UniformClassifierExample.scala)
-* [Mean Regressor](https://github.com/picnicml/doddle-model-examples/blob/master/src/main/scala/com/picnicml/doddlemodel/examples/dummy/MeanRegressorExample.scala)
-* [Median Regressor](https://github.com/picnicml/doddle-model-examples/blob/master/src/main/scala/com/picnicml/doddlemodel/examples/dummy/MedianRegressorExample.scala)
+* [Most Frequent Classifier](https://github.com/picnicml/doddle-model-examples/blob/master/src/main/scala/io/picnicml/doddlemodel/examples/dummy/MostFrequentClassifierExample.scala)
+* [Stratified Classifier](https://github.com/picnicml/doddle-model-examples/blob/master/src/main/scala/io/picnicml/doddlemodel/examples/dummy/StratifiedClassifierExample.scala)
+* [Uniform Classifier](https://github.com/picnicml/doddle-model-examples/blob/master/src/main/scala/io/picnicml/doddlemodel/examples/dummy/UniformClassifierExample.scala)
+* [Mean Regressor](https://github.com/picnicml/doddle-model-examples/blob/master/src/main/scala/io/picnicml/doddlemodel/examples/dummy/MeanRegressorExample.scala)
+* [Median Regressor](https://github.com/picnicml/doddle-model-examples/blob/master/src/main/scala/io/picnicml/doddlemodel/examples/dummy/MedianRegressorExample.scala)
 
 #### 4. Linear models
-* [Linear Regression](https://github.com/picnicml/doddle-model-examples/blob/master/src/main/scala/com/picnicml/doddlemodel/examples/linear/LinearRegressionExample.scala)
-* [Logistic Regression](https://github.com/picnicml/doddle-model-examples/blob/master/src/main/scala/com/picnicml/doddlemodel/examples/linear/LogisticRegressionExample.scala)
-* [Softmax Classifier](https://github.com/picnicml/doddle-model-examples/blob/master/src/main/scala/com/picnicml/doddlemodel/examples/linear/SoftmaxClassifierExample.scala)
-* [Poisson Regression](https://github.com/picnicml/doddle-model-examples/blob/master/src/main/scala/com/picnicml/doddlemodel/examples/linear/PoissonRegressionExample.scala)
+* [Linear Regression](https://github.com/picnicml/doddle-model-examples/blob/master/src/main/scala/io/picnicml/doddlemodel/examples/linear/LinearRegressionExample.scala)
+* [Logistic Regression](https://github.com/picnicml/doddle-model-examples/blob/master/src/main/scala/io/picnicml/doddlemodel/examples/linear/LogisticRegressionExample.scala)
+* [Softmax Classifier](https://github.com/picnicml/doddle-model-examples/blob/master/src/main/scala/io/picnicml/doddlemodel/examples/linear/SoftmaxClassifierExample.scala)
+* [Poisson Regression](https://github.com/picnicml/doddle-model-examples/blob/master/src/main/scala/io/picnicml/doddlemodel/examples/linear/PoissonRegressionExample.scala)
 
 #### 5. Model Selection
-* [K-Fold Cross-Validation](https://github.com/picnicml/doddle-model-examples/blob/master/src/main/scala/com/picnicml/doddlemodel/examples/modelselection/KFoldExample.scala)
-* [Group K-Fold Cross-Validation](https://github.com/picnicml/doddle-model-examples/blob/master/src/main/scala/com/picnicml/doddlemodel/examples/modelselection/GroupKFoldExample.scala)
-* [Grid Search](https://github.com/picnicml/doddle-model-examples/blob/master/src/main/scala/com/picnicml/doddlemodel/examples/modelselection/GridSearchExample.scala)
-* [Random Search](https://github.com/picnicml/doddle-model-examples/blob/master/src/main/scala/com/picnicml/doddlemodel/examples/modelselection/RandomSearchExample.scala)
+* [K-Fold Cross-Validation](https://github.com/picnicml/doddle-model-examples/blob/master/src/main/scala/io/picnicml/doddlemodel/examples/modelselection/KFoldExample.scala)
+* [Group K-Fold Cross-Validation](https://github.com/picnicml/doddle-model-examples/blob/master/src/main/scala/io/picnicml/doddlemodel/examples/modelselection/GroupKFoldExample.scala)
+* [Grid Search](https://github.com/picnicml/doddle-model-examples/blob/master/src/main/scala/io/picnicml/doddlemodel/examples/modelselection/GridSearchExample.scala)
+* [Random Search](https://github.com/picnicml/doddle-model-examples/blob/master/src/main/scala/io/picnicml/doddlemodel/examples/modelselection/RandomSearchExample.scala)
 
 #### 6. Miscellaneous
-* [Reading Data](https://github.com/picnicml/doddle-model-examples/blob/master/src/main/scala/com/picnicml/doddlemodel/examples/misc/ReadingDataExample.scala)
-* [Shuffling Data](https://github.com/picnicml/doddle-model-examples/blob/master/src/main/scala/com/picnicml/doddlemodel/examples/misc/ShuffleDatasetExample.scala)
-* [Splitting Data](https://github.com/picnicml/doddle-model-examples/blob/master/src/main/scala/com/picnicml/doddlemodel/examples/misc/SplitDatasetExample.scala)
-* [Feature Preprocessing Pipeline](https://github.com/picnicml/doddle-model-examples/blob/master/src/main/scala/com/picnicml/doddlemodel/examples/pipeline/PipelineExample.scala)
-* [Estimator Persistence](https://github.com/picnicml/doddle-model-examples/blob/master/src/main/scala/com/picnicml/doddlemodel/examples/misc/EstimatorPersistenceExample.scala)
+* [Reading Data](https://github.com/picnicml/doddle-model-examples/blob/master/src/main/scala/io/picnicml/doddlemodel/examples/misc/ReadingDataExample.scala)
+* [Shuffling Data](https://github.com/picnicml/doddle-model-examples/blob/master/src/main/scala/io/picnicml/doddlemodel/examples/misc/ShuffleDatasetExample.scala)
+* [Splitting Data](https://github.com/picnicml/doddle-model-examples/blob/master/src/main/scala/io/picnicml/doddlemodel/examples/misc/SplitDatasetExample.scala)
+* [Feature Preprocessing Pipeline](https://github.com/picnicml/doddle-model-examples/blob/master/src/main/scala/io/picnicml/doddlemodel/examples/pipeline/PipelineExample.scala)
+* [Estimator Persistence](https://github.com/picnicml/doddle-model-examples/blob/master/src/main/scala/io/picnicml/doddlemodel/examples/misc/EstimatorPersistenceExample.scala)
 
 ## Performance
 [doddle-model](https://github.com/picnicml/doddle-model) is developed with performance in mind, for benchmarks see the [doddle-benchmark](https://github.com/picnicml/doddle-benchmark) repository.
