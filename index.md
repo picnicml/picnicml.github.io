@@ -13,9 +13,9 @@ layout: default
 You can chat with us [on gitter](https://gitter.im/picnicml/doddle-model).
 
 ## Installation
-Add the dependency to your SBT project definition:
+Add the dependency to your SBT project definition (see the main GitHub repository for the latest release):
 ```scala
-libraryDependencies += "io.github.picnicml" %% "doddle-model" % "0.0.1-alpha1"
+libraryDependencies += "io.github.picnicml" %% "doddle-model" % "<latest_version>"
 ```
 
 ## Getting Started
