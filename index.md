@@ -6,17 +6,29 @@ layout: default
 [doddle-model](https://github.com/picnicml/doddle-model) is an in-memory machine learning library that can be summed up with three main characteristics:
 * it is built on top of [Breeze](https://github.com/scalanlp/breeze)
 * it provides [immutable objects](https://en.wikipedia.org/wiki/Immutable_object) that are a _doddle_ to use in parallel code
-* it exposes its functionality through a [scikit-learn](https://github.com/scikit-learn/scikit-learn)-like API
+* it exposes its functionality through a [scikit-learn](https://github.com/scikit-learn/scikit-learn)-like API [2] in idiomatic Scala using typeclasses
 
 **Caveat emptor!** [doddle-model](https://github.com/picnicml/doddle-model) is in an early-stage development phase. Any kind of contributions are much appreciated.
 
 You can chat with us [on gitter](https://gitter.im/picnicml/doddle-model).
 
 ## Installation
+<table>
+<tr>
+  <td>Latest Release</td>
+  <td>
+    <a href="https://search.maven.org/search?q=g:io.github.picnicml">
+    <img src="https://img.shields.io/maven-central/v/io.github.picnicml/doddle-model_2.12.svg?style=flat-square" alt="latest release"/>
+    </a>
+  </td>
+</tr>
+</table>
+
 Add the dependency to your SBT project definition (see the main GitHub repository for the latest release):
 ```scala
 libraryDependencies += "io.github.picnicml" %% "doddle-model" % "<latest_version>"
 ```
+Note that the latest version is displayed in the _Latest Release_ badge above and that the _v_ prefix should be removed from the SBT definition.
 
 ## Getting Started
 This is a complete list of code examples, for an example of how to serve a trained [doddle-model](https://github.com/picnicml/doddle-model) in a pipeline implemented with Apache Beam see [doddle-beam-example](https://github.com/picnicml/doddle-beam-example).
@@ -75,6 +87,8 @@ To limit the number of threads running at one time (and thus memory consumption)
 
 ## Development
 Run the tests with `sbt test`. Concerning the code style, [PayPal Scala Style](https://github.com/paypal/scala-style-guide) and [Databricks Scala Guide](https://github.com/databricks/scala-style-guide) are roughly followed. Note that a maximum line length of 120 characters is used.
+
+For a list of typeclasses that together define the estimator API see the [typeclasses directory](https://github.com/picnicml/doddle-model/tree/master/src/main/scala/io/picnicml/doddlemodel/typeclasses).
 
 ## Resources
 * [1] [Pattern Recognition and Machine Learning, Christopher Bishop](http://www.springer.com/gp/book/9780387310732)
