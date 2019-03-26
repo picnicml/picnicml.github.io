@@ -13,22 +13,15 @@ layout: default
 You can chat with us [on gitter](https://gitter.im/picnicml/doddle-model).
 
 ## Installation
-<table>
-<tr>
-  <td>Latest Release</td>
-  <td>
-    <a href="https://search.maven.org/search?q=g:io.github.picnicml">
+<a href="https://search.maven.org/search?q=g:io.github.picnicml">
     <img src="https://img.shields.io/maven-central/v/io.github.picnicml/doddle-model_2.12.svg?style=flat-square" alt="latest release"/>
-    </a>
-  </td>
-</tr>
-</table>
+</a>
 
 Add the dependency to your SBT project definition (see the main GitHub repository for the latest release):
 ```scala
 libraryDependencies += "io.github.picnicml" %% "doddle-model" % "<latest_version>"
 ```
-Note that the latest version is displayed in the _Latest Release_ badge above and that the _v_ prefix should be removed from the SBT definition.
+Note that the latest version is displayed in the _maven-central_ badge above and that the _v_ prefix should be removed from the SBT definition.
 
 ## Getting Started
 This is a complete list of code examples, for an example of how to serve a trained [doddle-model](https://github.com/picnicml/doddle-model) in a pipeline implemented with Apache Beam see [doddle-beam-example](https://github.com/picnicml/doddle-beam-example).
