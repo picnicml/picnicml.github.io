@@ -28,6 +28,7 @@ This is a complete list of code examples, for an example of how to serve a train
 
 #### 1. Feature Preprocessing
 * [Standard Scaler](https://github.com/picnicml/doddle-model-examples/blob/master/src/main/scala/io/picnicml/doddlemodel/examples/preprocessing/StandardScalerExample.scala)
+* [One-Hot Encoder](https://github.com/picnicml/doddle-model-examples/blob/master/src/main/scala/io/picnicml/doddlemodel/examples/preprocessing/OneHotEncoderExample.scala)
 * [Mean Value Imputation](https://github.com/picnicml/doddle-model-examples/blob/master/src/main/scala/io/picnicml/doddlemodel/examples/impute/MeanValueImputerExample.scala)
 
 #### 2. Metrics
