@@ -64,6 +64,9 @@ This is a complete list of code examples, for an example of how to serve a train
 * [Feature Preprocessing Pipeline](https://github.com/picnicml/doddle-model-examples/blob/master/src/main/scala/io/picnicml/doddlemodel/examples/pipeline/PipelineExample.scala)
 * [Estimator Persistence](https://github.com/picnicml/doddle-model-examples/blob/master/src/main/scala/io/picnicml/doddlemodel/examples/misc/EstimatorPersistenceExample.scala)
 
+#### 7. Use Cases
+* [Kaggle House Prices](https://github.com/picnicml/doddle-model-examples/blob/master/src/main/scala/io/picnicml/doddlemodel/examples/usecase/HousePrices.scala)
+
 ## Performance
 [doddle-model](https://github.com/picnicml/doddle-model) is developed with performance in mind, for benchmarks see the [doddle-benchmark](https://github.com/picnicml/doddle-benchmark) repository.
 
