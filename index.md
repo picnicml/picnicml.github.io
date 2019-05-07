@@ -17,7 +17,7 @@ You can chat with us [on gitter](https://gitter.im/picnicml/doddle-model).
     <img src="https://img.shields.io/maven-central/v/io.github.picnicml/doddle-model_2.12.svg?style=flat-square&label=maven%20central" alt="latest release"/>
 </a>
 
-Add the dependency to your SBT project definition (see the main GitHub repository for the latest release):
+Add the dependency to your SBT project definition:
 ```scala
 libraryDependencies += "io.github.picnicml" %% "doddle-model" % "<latest_version>"
 ```
