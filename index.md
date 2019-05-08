@@ -68,7 +68,7 @@ This is a complete list of code examples, for an example of how to serve a train
 * [Kaggle House Prices](https://github.com/picnicml/doddle-model-examples/blob/master/src/main/scala/io/picnicml/doddlemodel/examples/usecase/HousePrices.scala)
 
 ## Performance
-[doddle-model](https://github.com/picnicml/doddle-model) is developed with performance in mind, for benchmarks see the [doddle-benchmark](https://github.com/picnicml/doddle-benchmark) repository.
+[doddle-model](https://github.com/picnicml/doddle-model) is developed with performance in mind.
 
 #### 1. Native Linear Algebra Libraries
 [Breeze](https://github.com/scalanlp/breeze) utilizes [netlib-java](https://github.com/fommil/netlib-java) for accessing hardware optimised linear algebra libraries. TL;DR seeing something like
