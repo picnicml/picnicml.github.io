@@ -89,7 +89,7 @@ All experiments ran multiple times (iterations) for all implementations and with
 #### 1. Linear Regression
 - dataset with 150000 training examples and 27147 test examples (10 features)
 - each experiment ran for 100 iterations
-- [scikit-learn code](src/main/scala/com/picnicml/doddlemodel/linear/sklearn_linear_regression.py), [doddle-model code](src/main/scala/com/picnicml/doddlemodel/linear/DoddleLinearRegression.scala)
+- [scikit-learn code](https://github.com/picnicml/doddle-benchmark/blob/master/src/main/scala/com/picnicml/doddlemodel/linear/sklearn_linear_regression.py), [doddle-model code](https://github.com/picnicml/doddle-benchmark/blob/master/src/main/scala/com/picnicml/doddlemodel/linear/DoddleLinearRegression.scala)
 
 <table>
 <tr>
@@ -115,7 +115,7 @@ All experiments ran multiple times (iterations) for all implementations and with
 #### 2. Logistic Regression
 - dataset with 80000 training examples and 20000 test examples (250 features)
 - each experiment ran for 100 iterations
-- [scikit-learn code](src/main/scala/com/picnicml/doddlemodel/linear/sklearn_logistic_regression.py), [doddle-model code](src/main/scala/com/picnicml/doddlemodel/linear/DoddleLogisticRegression.scala)
+- [scikit-learn code](https://github.com/picnicml/doddle-benchmark/blob/master/src/main/scala/com/picnicml/doddlemodel/linear/sklearn_logistic_regression.py), [doddle-model code](https://github.com/picnicml/doddle-benchmark/blob/master/src/main/scala/com/picnicml/doddlemodel/linear/DoddleLogisticRegression.scala)
 
 <table>
 <tr>
@@ -141,7 +141,7 @@ All experiments ran multiple times (iterations) for all implementations and with
 #### 3. Softmax Classifier
 - MNIST dataset with 60000 training examples and 10000 test examples (784 features)
 - each experiment ran for 50 iterations
-- [scikit-learn code](src/main/scala/com/picnicml/doddlemodel/linear/sklearn_softmax_classifier.py), [doddle-model code](src/main/scala/com/picnicml/doddlemodel/linear/DoddleSoftmaxClassifier.scala)
+- [scikit-learn code](https://github.com/picnicml/doddle-benchmark/blob/master/src/main/scala/com/picnicml/doddlemodel/linear/sklearn_softmax_classifier.py), [doddle-model code](https://github.com/picnicml/doddle-benchmark/blob/master/src/main/scala/com/picnicml/doddlemodel/linear/DoddleSoftmaxClassifier.scala)
 
 <table>
 <tr>
