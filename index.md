@@ -93,22 +93,22 @@ All experiments ran multiple times (iterations) for all implementations and with
 
 <table>
 <tr>
-  <th>Implementation</th>
-  <th>RMSE</th>
-  <th>Training Time</th>
-  <th>Prediction Time</th>
+    <th>Implementation</th>
+    <th>RMSE</th>
+    <th>Training Time</th>
+    <th>Prediction Time</th>
 </tr>
 <tr>
-  <td>scikit-learn</td>
-  <td>3.0936</td>
-  <td>0.042s (+/- 0.014s)</td>
-  <td>0.002s (+/- 0.002s)</td>
+    <td>scikit-learn</td>
+    <td>3.0936</td>
+    <td>0.042s (+/- 0.014s)</td>
+    <td>0.002s (+/- 0.002s)</td>
 </tr>
 <tr>
-  <td>doddle-model</td>
-  <td>3.0936</td>
-  <td>0.053s (+/- 0.061s)</td>
-  <td>0.002s (+/- 0.004s)</td>
+    <td>doddle-model</td>
+    <td>3.0936</td>
+    <td>0.053s (+/- 0.061s)</td>
+    <td>0.002s (+/- 0.004s)</td>
 </tr>
 </table>
 
@@ -119,22 +119,22 @@ All experiments ran multiple times (iterations) for all implementations and with
 
 <table>
 <tr>
-  <th>Implementation</th>
-  <th>Accuracy</th>
-  <th>Training Time</th>
-  <th>Prediction Time</th>
+    <th>Implementation</th>
+    <th>Accuracy</th>
+    <th>Training Time</th>
+    <th>Prediction Time</th>
 </tr>
 <tr>
-  <td>scikit-learn</td>
-  <td>0.8389</td>
-  <td>2.789s (+/- 0.090s)</td>
-  <td>0.005s (+/- 0.006s)</td>
+    <td>scikit-learn</td>
+    <td>0.8389</td>
+    <td>2.789s (+/- 0.090s)</td>
+    <td>0.005s (+/- 0.006s)</td>
 </tr>
 <tr>
-  <td>doddle-model</td>
-  <td>0.8377</td>
-  <td>3.080s (+/- 0.665s)</td>
-  <td>0.025s (+/- 0.025s)</td>
+    <td>doddle-model</td>
+    <td>0.8377</td>
+    <td>3.080s (+/- 0.665s)</td>
+    <td>0.025s (+/- 0.025s)</td>
 </tr>
 </table>
 
@@ -145,26 +145,36 @@ All experiments ran multiple times (iterations) for all implementations and with
 
 <table>
 <tr>
-  <th>Implementation</th>
-  <th>Accuracy</th>
-  <th>Training Time</th>
-  <th>Prediction Time</th>
+    <th>Implementation</th>
+    <th>Accuracy</th>
+    <th>Training Time</th>
+    <th>Prediction Time</th>
 </tr>
 <tr>
-  <td>scikit-learn</td>
-  <td>0.9234</td>
-  <td>21.243s (+/- 0.303s)</td>
-  <td>0.074s (+/- 0.018s)</td>
+    <td>scikit-learn</td>
+    <td>0.9234</td>
+    <td>21.243s (+/- 0.303s)</td>
+    <td>0.074s (+/- 0.018s)</td>
 </tr>
 <tr>
-  <td>doddle-model</td>
-  <td>0.9223</td>
-  <td>25.749s (+/- 1.813s)</td>
-  <td>0.042s (+/- 0.032s)</td>
+    <td>doddle-model</td>
+    <td>0.9223</td>
+    <td>25.749s (+/- 1.813s)</td>
+    <td>0.042s (+/- 0.032s)</td>
 </tr>
 </table>
 
 ## Development
+<a href="https://circleci.com/gh/picnicml/doddle-model">
+    <img src="https://img.shields.io/circleci/project/github/picnicml/doddle-model/master.svg?style=flat-square&label=circleci" alt="build status"/>
+</a>
+<a href="https://app.codacy.com/project/inejc/doddle-model/dashboard">
+    <img src="https://img.shields.io/codacy/coverage/9f1dad5c6d6041dd85db71adabba3e72.svg?style=flat-square&label=codacy" alt="coverage"/>
+</a>
+<a href="https://app.codacy.com/project/inejc/doddle-model/dashboard">
+    <img src="https://img.shields.io/codacy/grade/9f1dad5c6d6041dd85db71adabba3e72/master.svg?style=flat-square&label=codacy" alt="code quality"/>
+</a>
+
 Run the tests with `sbt test`. Concerning the code style, [PayPal Scala Style](https://github.com/paypal/scala-style-guide) and [Databricks Scala Guide](https://github.com/databricks/scala-style-guide) are roughly followed. Note that a maximum line length of 120 characters is used.
 
 For a list of typeclasses that together define the estimator API see the [typeclasses directory](https://github.com/picnicml/doddle-model/tree/master/src/main/scala/io/picnicml/doddlemodel/typeclasses).
