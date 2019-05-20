@@ -8,7 +8,7 @@ layout: default
 * it provides [immutable estimators](https://en.wikipedia.org/wiki/Immutable_object) that are a _doddle_ to use in parallel code
 * it exposes its functionality through a [scikit-learn](https://github.com/scikit-learn/scikit-learn)-like API [2] in idiomatic Scala using [typeclasses](https://en.wikipedia.org/wiki/Type_class)
 
-<p>&#128679;</p> **Caveat emptor!** [doddle-model](https://github.com/picnicml/doddle-model) is in an early-stage development phase. Any kind of contributions are much appreciated.
+**Caveat emptor!** [doddle-model](https://github.com/picnicml/doddle-model) is in an early-stage development phase. Any kind of contributions are much appreciated.
 
 You can chat with us [on gitter](https://gitter.im/picnicml/doddle-model).
 
