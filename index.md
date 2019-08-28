@@ -22,7 +22,7 @@ Add the dependency to your SBT project definition:
 libraryDependencies  ++= Seq(
   "io.github.picnicml" %% "doddle-model" % "<latest_version>",
   // add optionally to utilize native libraries for a significant performance boost
-  "org.scalanlp" %% "breeze-natives" % "0.13.2"
+  "org.scalanlp" %% "breeze-natives" % "1.0"
 )
 ```
 Note that the latest version is displayed in the _maven central_ badge above and that the _v_ prefix should be removed from the SBT definition.
