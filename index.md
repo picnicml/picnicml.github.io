@@ -8,8 +8,6 @@ layout: default
 * it provides [immutable estimators](https://en.wikipedia.org/wiki/Immutable_object) that are a _doddle_ to use in parallel code
 * it exposes its functionality through a [scikit-learn](https://github.com/scikit-learn/scikit-learn)-like API [2] in idiomatic Scala using [typeclasses](https://en.wikipedia.org/wiki/Type_class)
 
-**Caveat emptor!** [doddle-model](https://github.com/picnicml/doddle-model) is in an early-stage development phase. Any kind of contributions are much appreciated.
-
 You can chat with us [on gitter](https://gitter.im/picnicml/doddle-model).
 
 ## Installation
@@ -73,6 +71,18 @@ This is a complete list of code examples, for an example of how to serve a train
 
 #### 7. Use Cases
 * [Kaggle House Prices](https://github.com/picnicml/doddle-model-examples/blob/master/src/main/scala/io/picnicml/doddlemodel/examples/usecase/HousePrices.scala)
+
+## Contributing
+<a href="https://circleci.com/gh/picnicml/doddle-model">
+    <img src="https://img.shields.io/circleci/project/github/picnicml/doddle-model/master.svg?style=flat-square&label=circleci" alt="build status"/>
+</a>
+<a href="https://app.codacy.com/project/inejc/doddle-model/dashboard">
+    <img src="https://img.shields.io/codacy/coverage/9f1dad5c6d6041dd85db71adabba3e72.svg?style=flat-square&label=codacy" alt="coverage"/>
+</a>
+<a href="https://app.codacy.com/project/inejc/doddle-model/dashboard">
+    <img src="https://img.shields.io/codacy/grade/9f1dad5c6d6041dd85db71adabba3e72/master.svg?style=flat-square&label=codacy" alt="code quality"/>
+</a>
+Want to help us? We have a [document](https://github.com/picnicml/doddle-model/blob/master/.github/CONTRIBUTING.md) that will make deciding how to do that much easier.
 
 ## Performance
 [doddle-model](https://github.com/picnicml/doddle-model) is developed with performance in mind.
@@ -171,20 +181,10 @@ All experiments ran multiple times (iterations) for all implementations and with
 </tr>
 </table>
 
-## Development
-<a href="https://circleci.com/gh/picnicml/doddle-model">
-    <img src="https://img.shields.io/circleci/project/github/picnicml/doddle-model/master.svg?style=flat-square&label=circleci" alt="build status"/>
-</a>
-<a href="https://app.codacy.com/project/inejc/doddle-model/dashboard">
-    <img src="https://img.shields.io/codacy/coverage/9f1dad5c6d6041dd85db71adabba3e72.svg?style=flat-square&label=codacy" alt="coverage"/>
-</a>
-<a href="https://app.codacy.com/project/inejc/doddle-model/dashboard">
-    <img src="https://img.shields.io/codacy/grade/9f1dad5c6d6041dd85db71adabba3e72/master.svg?style=flat-square&label=codacy" alt="code quality"/>
-</a>
-
-Run the tests with `sbt test`. Concerning the code style, [PayPal Scala Style](https://github.com/paypal/scala-style-guide) and [Databricks Scala Guide](https://github.com/databricks/scala-style-guide) are roughly followed. Note that a maximum line length of 120 characters is used.
-
-For a list of typeclasses that together define the estimator API see the [typeclasses directory](https://github.com/picnicml/doddle-model/tree/master/src/main/scala/io/picnicml/doddlemodel/typeclasses).
+## Core Maintainers
+This is a collaborative project which wouldn't be possible without all the [awesome contributors](https://github.com/picnicml/doddle-model/graphs/contributors). The core team currently consists of the following developers:
+- [@inejc](https://github.com/inejc)
+- [@matejklemen](https://github.com/matejklemen)
 
 ## Resources
 * [1] [Pattern Recognition and Machine Learning, Christopher Bishop](http://www.springer.com/gp/book/9780387310732)
