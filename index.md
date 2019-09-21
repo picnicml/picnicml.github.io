@@ -82,7 +82,8 @@ This is a complete list of code examples, for an example of how to serve a train
 <a href="https://app.codacy.com/project/inejc/doddle-model/dashboard">
     <img src="https://img.shields.io/codacy/grade/9f1dad5c6d6041dd85db71adabba3e72/master.svg?style=flat-square&label=codacy" alt="code quality"/>
 </a>
-Want to help us? We have a [document](https://github.com/picnicml/doddle-model/blob/master/.github/CONTRIBUTING.md) that will make deciding how to do that much easier.
+
+Want to help us? We have a [document](https://github.com/picnicml/doddle-model/blob/master/.github/CONTRIBUTING.md) that will make deciding how to do that much easier. Be sure to also check the [roadmap](https://github.com/picnicml/doddle-model/wiki/Roadmap).
 
 ## Performance
 [doddle-model](https://github.com/picnicml/doddle-model) is developed with performance in mind.
